@@ -1,0 +1,14 @@
+name = "money-tracker"
+main = ".open-next/worker.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "money_tracker_db"
+database_id = "your-d1-database-id-here"
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"

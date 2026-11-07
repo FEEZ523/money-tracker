@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 4%;
+    --border: 240 6% 90%;
+  }
+}
+
+body {
+  background-color: #0d0f14;
+  color: #0f172a;
+  font-family: var(--font-prompt), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Ambient Luxury Dark Backdrop */
+.luxury-workspace {
+  background: radial-gradient(circle at 50% 0%, #171b26 0%, #0a0c12 100%);
+  min-height: 100vh;
+}
+
+/* Luxury Peeking Card Effect */
+.peeking-card {
+  background: linear-gradient(135deg, #facc15 0%, #22d3ee 50%, #3b82f6 100%);
+  box-shadow: -8px 0 25px -5px rgba(0, 0, 0, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Luxury Floating Bottom Dock */
+.floating-dock {
+  background: rgba(13, 16, 23, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Smooth iOS-style rounded sheet */
+.luxury-bottom-sheet {
+  background: #ffffff;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  box-shadow: 0 -15px 40px -10px rgba(0, 0, 0, 0.35);
+}
+
+/* Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
